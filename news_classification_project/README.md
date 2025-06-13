@@ -24,6 +24,7 @@
       ├── free-news-datasets-master/   <-- 你下载并解压的数据集
       └── news_classification_project  <-- 你接下来要克隆的项目代码
   ```
+  然后请解压里面所有的zip文件
 
 #### **第三步：克隆代码库并安装依赖**
 
