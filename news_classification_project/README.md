@@ -85,9 +85,9 @@
 
 现在，请大家领取各自负责的模型，并开始进行实验。我们的分工如下：
 
-- **逻辑回归 (Logistic Regression)**
-- **支持向量机 (Support Vector Machine - SVM)**
-- **决策树 (Decision Tree)**
+- **逻辑回归 (Logistic Regression)** - Shuqi
+- **支持向量机 (Support Vector Machine - SVM)** - Shibo
+- **决策树 (Decision Tree)** - Jiarui
 
 你们每个人的具体任务都一样，请严格按照以下步骤操作：
 
