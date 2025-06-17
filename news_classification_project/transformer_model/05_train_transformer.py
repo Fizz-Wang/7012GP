@@ -34,7 +34,7 @@ def load_data():
     Loads data from a CSV file.
     If the file doesn't exist, it creates a placeholder CSV to prevent errors.
     """
-    data_path = Path('../news_dataset.csv')
+    data_path = Path('../news_dataset_english_filtered.csv')
     # Ensure the parent directory exists
     if not data_path.parent.exists():
         data_path.parent.mkdir(parents=True, exist_ok=True)
