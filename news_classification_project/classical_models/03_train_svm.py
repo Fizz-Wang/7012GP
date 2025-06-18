@@ -143,7 +143,7 @@ if params_for_this_run.get('probability', False):
     auc_score = roc_auc_score(y_test, y_pred_proba, multi_class='ovo', average='weighted')
     print(f"AUC Score: {auc_score:.4f}")
 else:
-    print("AUC计算已跳过 (probability=False)")
+    print("AUC  calculation has been skipped. (probability=False)")
 # 6b: Generate classification report and confusion matrix
 report = classification_report(y_test, y_pred)
 conf_matrix = confusion_matrix(y_test, y_pred)
