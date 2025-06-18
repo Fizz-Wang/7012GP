@@ -1,0 +1,56 @@
+
+================================================================
+EVALUATION REPORT: DECISION_TREE
+FILENAME       : decision_tree_criterion-gini_max_depth-20_min_samples_leaf-5_20250619_003201.txt
+Timestamp      : 20250619_003201
+----------------------------------------------------------------
+Hyperparameters:
+{'criterion': 'gini', 'max_depth': 20, 'min_samples_leaf': 5}
+
+Performance Metrics:
+- Accuracy               : 0.4102
+- AUC Score (ovo, weighted): 0.7659
+
+Classification Report:
+                               precision    recall  f1-score   support
+
+       Crime, Law and Justice       0.32      0.43      0.37       410
+        Disaster and Accident       0.72      0.22      0.34       148
+Economy, Business and Finance       0.24      0.05      0.09       174
+                    Education       0.31      0.10      0.15       151
+                  Environment       0.43      0.31      0.36       524
+                       Health       0.41      0.45      0.43       637
+               Human Interest       0.19      0.52      0.27       918
+                        Labor       0.64      0.56      0.60       392
+        Lifestyle and Leisure       0.29      0.02      0.05       405
+                     Politics       0.41      0.26      0.32       453
+          Religion and Belief       0.80      0.62      0.70       848
+       Science and Technology       0.47      0.41      0.43       683
+                 Social Issue       0.23      0.03      0.05       249
+                        Sport       0.41      0.36      0.39       337
+     War, Conflict and Unrest       0.65      0.54      0.59       842
+                      Weather       0.85      0.55      0.67       326
+
+                     accuracy                           0.41      7497
+                    macro avg       0.46      0.34      0.36      7497
+                 weighted avg       0.47      0.41      0.41      7497
+
+
+Confusion Matrix:
+[[176   2   2   1   7  32 117   7   3  17   8  13   1   9  14   1]
+ [ 12  33   0   0   6   7  70   1   0   4   1   2   0   2   6   4]
+ [  9   0   9   0   6  10  91   6   0   1   4  33   0   4   1   0]
+ [  3   0   1  15   5  13  80   3   1   1   3  12   0  11   2   1]
+ [ 16   2   4   4 162  33 219   6   0   5   3  43   3   1  10  13]
+ [ 36   2   3   6  31 284 179  19   2   7   9  37   1  13   5   3]
+ [ 64   2   4   5  33  88 480  19   6  31  38  36   2  61  48   1]
+ [  4   0   4   2   6  19  94 219   2  10   0  16   3   5   8   0]
+ [  6   0   0   0  12  25 267   2  10   5   9  35   0  25   8   1]
+ [ 59   2   1   2   7  35 127  15   0 120  13  16   8   7  40   1]
+ [ 35   0   1   5   9  33 148   2   4  22 528  16   2   5  38   0]
+ [ 13   1   7   8  34  55 238  13   4   3   3 277   1   7  17   2]
+ [ 50   0   0   0   8  27  70  13   0  20   9  16   7   6  22   1]
+ [  6   0   0   1   6   4 165   1   1   2   2   8   0 123  18   0]
+ [ 42   0   1   0   9  17 180  12   1  43  32  27   2  20 453   3]
+ [ 14   2   0   0  34  11  67   4   0   3   2   5   0   1   4 179]]
+================================================================
