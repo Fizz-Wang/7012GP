@@ -1,0 +1,56 @@
+
+================================================================
+EVALUATION REPORT: DECISION_TREE
+FILENAME       : decision_tree_criterion-entropy_max_depth-50_min_samples_split-5_min_samples_leaf-2_max_features-sqrt_class_weight-balanced_20250619_003102.txt
+Timestamp      : 20250619_003102
+----------------------------------------------------------------
+Hyperparameters:
+{'criterion': 'entropy', 'max_depth': 50, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 'sqrt', 'class_weight': 'balanced'}
+
+Performance Metrics:
+- Accuracy               : 0.2889
+- AUC Score (ovo, weighted): 0.6997
+
+Classification Report:
+                               precision    recall  f1-score   support
+
+       Crime, Law and Justice       0.33      0.35      0.34       410
+        Disaster and Accident       0.18      0.40      0.25       148
+Economy, Business and Finance       0.18      0.37      0.24       174
+                    Education       0.10      0.26      0.15       151
+                  Environment       0.22      0.18      0.20       524
+                       Health       0.35      0.21      0.26       637
+               Human Interest       0.35      0.16      0.22       918
+                        Labor       0.42      0.47      0.44       392
+        Lifestyle and Leisure       0.12      0.37      0.18       405
+                     Politics       0.26      0.24      0.25       453
+          Religion and Belief       0.62      0.41      0.49       848
+       Science and Technology       0.30      0.19      0.23       683
+                 Social Issue       0.12      0.18      0.14       249
+                        Sport       0.23      0.34      0.27       337
+     War, Conflict and Unrest       0.47      0.26      0.34       842
+                      Weather       0.52      0.60      0.56       326
+
+                     accuracy                           0.29      7497
+                    macro avg       0.30      0.31      0.28      7497
+                 weighted avg       0.35      0.29      0.30      7497
+
+
+Confusion Matrix:
+[[143  18  15  17   6  13  26   7  58  23  10   9  22  21  15   7]
+ [  2  59   3   5   8   1  11   4  20   7   6   0   4   4   3  11]
+ [  4   4  65  10  12   5   8  17  11   6   0  13   5   8   4   2]
+ [  4   7   2  39   8  10   8   2  24   4   4   7   6  18   6   2]
+ [ 15  21  41  23  93  21  16  29 112  15   9  38  17  24  23  27]
+ [ 33  24  17  43  33 132  23  32 114  20  16  35  42  31  22  20]
+ [ 39  35  42  62  45  48 143  25 157  62  35  53  39  79  34  20]
+ [  1  10  22  13  19   6   8 183  26  22   6  33  18   8  12   5]
+ [  9  22  22  20  23  14  27   4 148   8   8  25  16  38   9  12]
+ [ 32  11  17  17  16  15  14  20  62 109  31  16  36  13  34  10]
+ [ 47  25  19  28  29  25  33  18 101  34 349  17  44  23  42  14]
+ [ 23  18  54  44  48  42  16  34 162  20   8 129  28  21  18  18]
+ [ 19   5   6   7  12   9   7  15  43  22  12  10  44  15  12  11]
+ [ 20  15  11  16  17   8  15   4  68   8  14  11   5 113  11   1]
+ [ 41  40  26  26  36  27  43  33 105  53  49  23  38  60 220  22]
+ [  7  16   8   8  12   5   7   5  21  10   9   4   4   9   4 197]]
+================================================================
