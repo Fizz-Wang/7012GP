@@ -1,15 +1,7 @@
 # =================================================================================================
-#
-#                                       GENERAL INSTRUCTIONS
-#
-# This script trains, evaluates, and saves a Logistic Regression model based on the
-# hyperparameters defined in "CRITICAL TASK B".
-# To run another experiment, simply change the parameter values and re-run the script.
-#
-# =================================================================================================
 # FILE: 02_train_logistic.py
 #
-# TEAM-MEMBER: [Your Name Here]
+# TEAM-MEMBER: Zhuang Shuqi
 #
 # =================================================================================================
 
@@ -40,7 +32,7 @@ params_for_this_run = {
     #      - 较小的值 (如 0.01, 0.1) 表示更强的正则化，可以帮助防止模型过拟合，但可能导致模型过于简单。
     #      - 较大的值 (如 10.0, 100.0) 表示更弱的正则化，模型会更努力地拟合训练数据，但有过拟合的风险。
     #      - 建议尝试的值: [0.1, 1.0, 10.0, 50.0, 100.0]
-    'C': 10.0,
+    'C': 20,
 
     # 'penalty': 正则化的类型。
     #      - 'l2': 最常用的正则化项（Ridge），会使模型权重趋向于较小的值，但不会变为0。
@@ -53,7 +45,6 @@ params_for_this_run = {
     #      - 'saga': 对于大型数据集更有效，也支持 'l1' 和 'l2'。
     #      - 'lbfgs': 是默认的求解器之一，但只支持 'l2' 正则化。
     'solver': 'liblinear',
-
     # 'max_iter': 算法收敛的最大迭代次数。
     #      - 如果你看到关于 "convergence" 的警告，可以尝试增加这个值，比如 2000 或 5000。
     'max_iter': 1000,
@@ -110,8 +101,9 @@ def main():
 
     # --- 6a: Instantiate and Train the Model ---
     # 'random_state=42' ensures reproducibility.
-    model = LogisticRegression(**params_for_this_run, random_state=42)
-
+    model = LogisticRegression(**params_for_this_run,
+                               random_state=42,
+                               class_weight='balanced')
     # Train the model on the training data.
     print("Training the model...")
     model.fit(X_train_tfidf, y_train)
